@@ -173,53 +173,91 @@ For large document collections, consider:
 
 ## Example
 
+### Example from manual calculation
+
 ```bash
-# Run a search for "volkswagen electric cars" on test documents
-python3 tfidf_search.py --input preprocessing/data/autorevue.json --queries "volkswagen" "vozy cupra" --verbose
+# Example from manual calculation
+python3 tfidf_search.py --input example1.json --queries "krásné město" --top 5 --basic   
 ```
 
-Sample output: 
+Output: 
 ```
 ==================================================
 SEARCH RESULTS
 ==================================================
 
-Query 1: "volkswagen"
-Processed query terms: ['volkswag']
+Query 1: "krásné město"
 ----------------------------------------
-1. Document: "Nejvýkonnější Volkswagen ID.Buzz má český ceník. Verzi GTX můžete objednávat již nyní"
-   Abstract: Výkon 340 koní, pohon všech kol, dobrá tažná síla i solidní dojezd – ostrá verze vstupuje do prodeje...
-   Similarity: 0.0772
-   Matching terms: volkswag
+1. Document: "d1"
+   Abstract: 
+   Similarity: 0.3148
 
-2. Document: "Nejlevnější nový Volkswagen Tayron vypadá takto. Plug-in jen pro pět, zato se skvělým dojezdem"
-   Abstract: Nové rodinné SUV míří do prodeje se zatím omezenou nabídkou výbav i motorizací. Základní specifikace...
-   Similarity: 0.0707
-   Matching terms: volkswag
+2. Document: "d3"
+   Abstract: 
+   Similarity: 0.2486
 
-3. Document: "Nový Volkswagen Tayron oficiálně: Rival Kodiaqu má sedm míst i tradiční motory"
-   Abstract: Německá automobilka vrací do hry přímého rivala Škody Kodiaq, tentokrát jde však o nový samostatný m...
-   Similarity: 0.0530
-   Matching terms: volkswag
+3. Document: "d2"
+   Abstract: 
+   Similarity: 0.0000
+```
 
+### Example from excel calculation
 
-Query 2: "vozy cupra"
-Processed query terms: ['vozit', 'cup']
+```bash
+# Example from Excel
+python3 tfidf_search.py --input example2.json --queries "tropical fish sea" "tropical fish" --top 5 --basic
+```
+
+Output:
+```
+==================================================
+SEARCH RESULTS
+==================================================
+
+Query 1: "tropical fish sea"
 ----------------------------------------
-1. Document: "Taková garáž v Česku ještě nebyla. Je plná vozů Cupra a nedaleko centra Prahy"
-   Abstract: Pro vozy Cupra se chodí do garáže. A od minulého týdne se pro ně můžete vydat i do Středočeského kra...
-   Similarity: 0.2191
-   Matching terms: vozit, cup
+1. Document: "d2"
+   Abstract: 
+   Similarity: 0.5285
 
-2. Document: "Nová Škoda Superb Sportline vstupuje na český trh. I s jedna-pětkou TSI stojí skoro 1,1 milionu"
-   Abstract: Akčně laděná verze jde na trh jako liftback i kombi, pod kapotou může mít i plug-in hybrid.
-   Similarity: 0.0060
-   Matching terms: vozit
+2. Document: "d1"
+   Abstract: 
+   Similarity: 0.1781
 
-3. Document: "Toyota v Česku vyrazila na roadshow s auty pro profíky. Veze kompletní nabídku včetně přestaveb!"
-   Abstract: Vyrazili jsme na jednu ze zastávek Toyota Professional Roadshow, která letos nabízí pestrý program p...
-   Similarity: 0.0058
-   Matching terms: vozit
+3. Document: "d3"
+   Abstract: 
+   Similarity: 0.1443
+
+4. Document: "d4"
+   Abstract: 
+   Similarity: 0.0100
+
+5. Document: "d5"
+   Abstract: 
+   Similarity: 0.0000
+
+
+Query 2: "tropical fish"
+----------------------------------------
+1. Document: "d1"
+   Abstract: 
+   Similarity: 0.3523
+
+2. Document: "d3"
+   Abstract: 
+   Similarity: 0.2855
+
+3. Document: "d2"
+   Abstract: 
+   Similarity: 0.0197
+
+4. Document: "d4"
+   Abstract: 
+   Similarity: 0.0197
+
+5. Document: "d5"
+   Abstract: 
+   Similarity: 0.0000
 ```
 
 ## Author

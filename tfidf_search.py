@@ -374,41 +374,55 @@ def rank_documents(query_vector: Dict[str, float],
     return similarities[:top_k]
 
 
-def create_preprocessing_pipeline() -> PreprocessingPipeline:
+def create_preprocessing_pipeline(basic_mode=False) -> PreprocessingPipeline:
     """
     Create a standard preprocessing pipeline with stemming support.
+    
+    Args:
+        basic_mode: If True, do not use preprocessing
     
     Returns:
         Configured preprocessing pipeline
     """
-    # Create a stemming preprocessor first
-    stemming_preprocessor = create_stemming_preprocessor()
+    preprocessors = []
+
+    # Skip advanced preprocessing if in basic mode
+    if not basic_mode:
+        # Create preprocessors - start with basic ones
+        preprocessors = [
+            LowercasePreprocessor(),
+            RemoveDiacriticsPreprocessor(),
+        ]
+
+        # Create a stemming preprocessor
+        stemming_preprocessor = create_stemming_preprocessor()
+        
+        # Add additional preprocessors
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        data_dir = os.path.join(current_dir, "preprocessing", "data")
+        
+        # Fallback to standard directories if needed
+        if not os.path.exists(data_dir):
+            data_dir = os.path.join(current_dir, "data")
+        
+        # Add nonsense token preprocessor and stemming
+        preprocessors.append(NonsenseTokenPreprocessor(min_word_length=2))
+        
+        # Try to add stop words if available
+        try:
+            stop_words = StopWordsPreprocessor(language="cz", stop_words_dir=data_dir)
+            preprocessors.append(stop_words)
+        except Exception as e:
+            print(f"Error loading stop words: {e}")
+        
+        # Add stemming at the end
+        preprocessors.append(stemming_preprocessor)
+    else:
+        # For basic mode, just add minimal word length filter
+        preprocessors.append(NonsenseTokenPreprocessor(min_word_length=1))
     
-    # Create other preprocessors
-    current_dir = os.path.dirname(os.path.abspath(__file__))
-    data_dir = os.path.join(current_dir, "preprocessing", "data")
-    
-    # Fallback to standard directories if needed
-    if not os.path.exists(data_dir):
-        data_dir = os.path.join(current_dir, "data")
-    
-    # Create preprocessors
-    preprocessors = [
-        LowercasePreprocessor(),
-        RemoveDiacriticsPreprocessor(),
-        NonsenseTokenPreprocessor(min_word_length=2),
-        stemming_preprocessor 
-    ]
-    
-    # Try to add stop words if available
-    try:
-        stop_words = StopWordsPreprocessor(language="cz", stop_words_dir=data_dir)
-        # Insert before stemming
-        preprocessors.insert(2, stop_words)
-    except Exception as e:
-        print(f"Error loading stop words: {e}")
-    
-    return PreprocessingPipeline(preprocessors, name="Standard Pipeline")
+    pipeline_name = "Basic Pipeline" if basic_mode else "Standard Pipeline"
+    return PreprocessingPipeline(preprocessors, name=pipeline_name)
 
 
 def load_documents(file_path: str) -> List[Dict[str, Any]]:
@@ -498,12 +512,13 @@ def main():
     parser.add_argument('--top', type=int, default=3, help='Number of top results to display')
     parser.add_argument('--verbose', action='store_true', help='Enable verbose output')
     parser.add_argument('--debug', action='store_true', help='Enable debug mode with detailed output')
+    parser.add_argument('--basic', action='store_true', help='Use basic mode with minimal preprocessing (no stemming/stop words)')
     args = parser.parse_args()
     
     # Use default queries if none provided
     if not args.queries:
         args.queries = [
-            "volkswagen",  # This should match "volkswag" after stemming
+            "volkswagen",  
             "electric cars",
             "automobile history"
         ]
@@ -520,7 +535,7 @@ def main():
         print(f"Loaded {len(documents_json)} documents.")
         
         # Create preprocessing pipeline
-        pipeline = create_preprocessing_pipeline()
+        pipeline = create_preprocessing_pipeline(basic_mode=args.basic)
         print(f"Using preprocessing pipeline: {pipeline.name}")
         
         # Process documents and build inverted index
