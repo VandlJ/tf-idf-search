@@ -1,0 +1,117 @@
+#utf-8
+#prefixy substantiv a adjektiv (viz Příruční mluvnice češtiny, isbn: 80-7106-134-4)
+#        1.1.5 názvy hromadné (kolektiva)
+sou
+#        1.1.8 augmentiva (jména zveličelá)
+arci
+ultra
+#        1.1.9 modifikace dalšími přídatnými rysy
+pra
+prapra
+praprapra
+nad
+super
+pod
+sub
+místo
+pro
+kontr
+kontra
+ex
+spolu
+sou
+kon
+proti
+#        1.1.10 modifikace hodnotícími rysy
+pa
+kvazi
+quasi
+pseudo
+lži
+#        1.1.11 popření konstituujících rysů pojmenování
+#ne !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+#        1.1.12 názvy specifikační
+pa
+#    1.4 substantiva z adverbií a z předložkových pádů
+ná
+pří
+zá
+#        1.6.1. jména činitelská
+samo
+vše
+#        1.6.1. názvy dějů
+sebe
+auto
+#        1.6.1. názvy nositelů vlastností
+vele
+vel
+auto
+elektro
+foto
+radio
+stereo
+#        1.6.1. kompozita číselná
+dvou
+dvoj
+troj
+čtyř
+pěti
+šesti
+sedmi
+osmi
+devíti
+deseti
+sto
+tisící
+čtvrt
+půl
+polo
+mnoho
+mono
+bi
+di
+tri
+tetra
+penta
+hexa
+hepta
+okto
+deka
+hekto
+kilo
+ega
+giga
+deci
+centi
+mili
+mikro
+nano
+polo
+semi
+mnoho
+poly
+#        2.3.2 superlativ
+nej
+#        2.3.4 velká míra vlastností
+vele
+pra
+prach
+roz
+rozto
+#        2.3.5 nejvyšší míra vlastností
+pře
+#        2.3.6 připuštění nejvyšší míry vlastností
+sebe
+ultra
+super
+supra
+hyper
+#        2.3.8 menší, neúplná míra vlastností
+polo
+kvazi
+#        2.4.1 adjektiva z přeložkových pádů
+bez
+
+
+# pok
+vy

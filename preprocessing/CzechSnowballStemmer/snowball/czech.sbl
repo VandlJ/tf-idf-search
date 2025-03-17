@@ -1,0 +1,596 @@
+/*
+ * Snowball stemming algorithm for czech language based on grammatical rules.
+ * Author: David Hellebrand
+ * Brno 2010
+*/
+routines (
+           postlude
+           mark_regions  R1
+           end_vowel
+           end_double
+           alternance_i
+           exception
+           nouns_suffixes       nouns_endings
+           adjectives_suffixes  adjectives_endings
+           verbs_suffixes        verbs_endings
+           adverbs_suffixes
+)
+
+externals ( stem )
+integers ( p1 )
+booleans ( found_suffix )
+groupings ( vowel consonant aeiou)
+stringescapes {}
+
+/* special characters (in UTF 8) */
+stringdef a'   hex '0e1'
+stringdef cv   hex '10d'
+stringdef dv   hex '10f'
+stringdef e'   hex '0e9'
+stringdef ev   hex '11b'
+stringdef i'   hex '0ed'
+stringdef nv   hex '148'
+stringdef o'   hex '0f3'
+stringdef rv   hex '159'
+stringdef sv   hex '161'
+stringdef tv   hex '165'
+stringdef u'   hex '0fa'
+stringdef u^   hex '16f'
+stringdef y'   hex '0fd'
+stringdef zv   hex '17e'
+
+define vowel 'aeiouy{a'}{e'}{ev}{i'}{o'}{u'}{u^}{y'}'
+define consonant 'bc{cv}d{dv}fghjklmn{nv}pqr{rv}s{sv}t{tv}vwxz{zv}'
+define aeiou 'aeiou'
+
+
+define mark_regions as (
+    $p1 = limit
+    gopast vowel  gopast non-vowel  setmark p1
+)
+
+define postlude as repeat (
+    [substring] among(
+        '{a'}' (<- 'a')
+        '{e'}' (<- 'e')
+        '{i'}' (<- 'i')
+        '{o'}' (<- 'o')
+        '{u'}' (<- 'u')
+        '{y'}' (<- 'y')
+        '{cv}' (<- 'c')
+        '{dv}' (<- 'd')
+        '{ev}' (<- 'e')
+        '{nv}' (<- 'n')
+        '{rv}' (<- 'r')
+        '{sv}' (<- 's')
+        '{tv}' (<- 't')
+        '{u^}' (<- 'u')
+        '{zv}' (<- 'z')
+        ''     (next)
+    )
+)
+
+define exception as (
+    [substring] atlimit among(
+        /* special changes: */
+        'jsem' 'jsi' 'je' 'jsme' 'jste' 'jsou' 'byl' 'bu{dv}' 'bu{dv}te'
+        'bu{dv}me' 'jsa' 'jsouc' 'jsouce' 'budu' 'bude{sv}' 'bude' 'budeme'
+        'budete' 'budou'
+        (<-'byt')
+
+        'm{a'}m' 'm{a'}{sv}' 'm{a'}' 'm{a'}me' 'm{a'}te' 'maj{i'}' 'm{ev}l'
+        'm{ev}j' 'm{ev}jte' 'm{ev}jme' 'maje' 'maj{i'}c' 'maj{i'}ce'
+        (<-'mit')
+
+        'jdu' 'jde{sv}' 'jde' 'jdeme' 'jdete' 'jdou' '{sv}el' '{sv}la' '{sv}lo'
+        '{sv}li' 'jdi' 'poj{dv}' 'jd{ev}te' 'jd{ev}me' 'poj{dv}te' 'jda' 'jdouc'
+        'jdouce' 'p{u^}jdu' 'p{u^}jde{sv}' 'p{u^}jde' 'p{u^}jdeme' 'p{u^}jdete'
+        'p{u^}jdou'
+        (<-'jit')
+
+        'j{i'}m' 'j{i'}{sv}' 'j{i'}' 'j{i'}me' 'j{i'}te' 'jed{i'}' 'jedl'
+        'jeden' 'jez' 'jezte' 'jezme' 'jeda' 'jedouc' 'jedouce'
+        (<-'jist')
+        
+        'sn{i'}m' 'sn{i'}{sv}' 'sn{i'}' 'sn{i'}me' 'sn{i'}te' 'sn{ev}d{i'}'
+        'sn{ev}dl' 'sn{ev}den' 'sn{ev}z' 'sn{ev}zte' 'sn{ev}zme'
+        (<-'snist')
+        
+        'vid{i'}m' 'vid{i'}{sv}' 'vid{i'}me' 'vid{i'}te' 'vid{i'}' 'vid{ev}l'
+        'vid{ev}n' 'viz' 'vizte' 'vizme' 'vida' 'vidouc' 'vidouce'
+        (<-'videt')
+
+        'v{i'}m' 'v{i'}{sv}' 'v{i'}' 'v{i'}me' 'v{i'}te' 'v{ev}d{i'}'
+        'v{ev}d{ev}l' 'v{ev}d{ev}n' 'v{ev}z' 'v{ev}zte' 'v{ev}zme' 'v{ev}da'
+        'v{ev}douc' 'v{ev}douce'
+        (<-'vedet')
+
+        'chci' 'chce{sv}' 'chce' 'chceme' 'chcete' 'cht{ev}j{i'}'
+        'cht{ev}l' 'cht{ev}n' 'cht{ev}j' 'cht{ev}jte' 'cht{ev}jme' 'cht{ev}'
+        'cht{ev}je' 'cht{i'}c' 'cht{ev}j{i'}c' 'cht{i'}ce' 'cht{ev}j{i'}ce'
+        (<-'chtit')
+    )
+) //exception
+
+backwardmode (
+    define R1 as $p1 <= cursor
+
+    define nouns_suffixes as (
+        do (
+            [substring] R1 among (
+                'ice' 'ie' 'ik' 'ika' 'ikum' 'ina' 'inec' 'ing' 'ink' 'inka'
+                'iny' 'ion{a'}{rv}' 'isko' 'ismus' 'ista' 'ita' 'itba' 'itel'
+                'ium' 'ivo' 'ivum' 'izna' 'i{a'}n' 'i{e'}r' 'i{sv}t{ev}'
+                (
+                    delete
+                    //do alternance_i
+                    set found_suffix
+                )
+                'n{i'}k'
+                (
+                    delete
+                    (['{sv}'] <- 'ch')
+                    set found_suffix
+                )
+                'ace' 'ajzna' 'ala' 'an' 'ance' 'ant' 'an{i'}' 'as' 'at{e'}r'
+                'a{rv}' 'ba' 'ce' 'ctv{i'}' 'dlo' 'ec' 'ek' 'ence' 'enice' 'enka'
+                'ent' 'en{i'}' 'er' 'erie' 'est' 'et{i'}' 'e{cv}ek' 'e{cv}ka'
+                'e{cv}ko' 'graf' 'ka' 'ko' 'kyn{ev}' 'k{a'}{rv}' 'lo' 'log'
+                'loun' 'ment' 'met' 'm{ev}r' 'na' 'nce' 'nda' 'nice' 'nka' 'no'
+                'nom' 'nost' 'n{a'}' 'n{e'}' 'n{e'}{rv}' 'n{i'}' 'oba' 'obinec'
+                'och' 'or' 'ost' 'ot' 'ota' 'oun' 'our' 'out' 'ou{sv}' 'ou{sv}ek'
+                'ov' 'ovatel' 'ovec' 'ovina' 'ovisko' 'ovi{sv}t{ev}' 'ovna'
+                'ovn{e'}' 'ovn{i'}k' 'ovstvo' 'ov{a'}' 'ov{i'}' 'o{nv}' 'se'
+                'slov{i'}' 'stvo' 'stv{i'}' 'tba' 'tec' 'tel' 'telna' 'tina'
+                'tka' 'tko' 'tor' 'to{rv}' 'tura' 'tva' 'tvo' 't{e'}ka' 't{i'}'
+                'ucha' 'ule' 'unk' 'ura' 'u{nv}k' 'u{sv}ka' 'vka' 'vod' 'xe'
+                'yn{ev}' 'ze' '{a'}k' '{a'}l' '{a'}la' '{a'}n' '{a'}nek'
+                '{a'}n{i'}' '{a'}rna' '{a'}sek' '{a'}t' '{a'}tko' '{a'}tor'
+                '{a'}{cv}' '{a'}{cv}ek' '{a'}{rv}' '{a'}{zv}' '{e'}r' '{rv}ad'
+                '{e'}{cv}ko' '{e'}{rv}' '{i'}k' '{i'}n' '{i'}nek' '{i'}rna'
+                '{i'}{cv}ek' '{i'}{cv}ka' '{i'}{cv}ko' '{i'}{rv}' '{y'}{rv}'
+                '{y'}{sv}' '{cv}an' '{cv}e' '{cv}ka' '{cv}no' '{cv}{i'}'
+                '{ev}nka' '{ev}n{i'}' '{ev}t{i'}' '{rv}ad{i'}' '{sv}tina'
+                (
+                    delete
+                    set found_suffix
+                )
+            )
+        )
+    ) //nouns_suffixes
+
+
+
+    define nouns_endings as (
+        do (
+            [substring] R1 among (
+                'eb' 'b{a'}ch' 'b{a'}m' 'b{ev}' 'by' 'bami' 'bou' 'bu' 'bo'
+                (
+                  delete
+                  insert 'ba'
+                )
+                'c{u^}' 'cem' 'c{u^}m' '{cv}e'
+                (
+                  delete
+                  insert 'ec'
+                )
+                'le' 'el' 'lem' 'l{u^}m' 'lech' 'lu' 'ly' 'la'
+                (
+                  delete
+                  insert 'lo'
+                )
+                'r' 'rami' 'ru' 'r{a'}m' 'ry' 'rou' 'r{a'}ch' 'ro'
+                (
+                  delete
+                  insert 'ra'
+                )
+                'nou' 'nami' 'n{a'}ch' 'n{a'}m'
+                (
+                  delete
+                  insert 'na'
+                )
+                'eti' 'ete' 'etem'
+                (
+                  delete
+                  insert 'e'
+                )
+                'nem' 'nech' 'n{u^}m'
+                (
+                  delete
+                  insert 'no'
+                )
+                'vami' 'vou' 'v{a'}ch' 'v{ev}' 'v{a'}m'
+                (
+                  delete
+                  insert 'va'
+                )
+                'kovi'
+                (
+                  delete
+                  insert 'ek'
+                )
+                'ti' 't{ev}m' 't{i'}m' 't{i'}ch' '{tv}'
+                (
+                  delete
+                  insert 't{ev}'
+                )
+                'ga' 'gy' 'gu' 'g{u^}m' 'gov{e'}' 'govi' 'gem' 'g{u^}'
+                (
+                  delete
+                  insert 'g'
+                )
+                'v{u^}m' 'vech' 'vem'
+                (
+                  delete
+                  insert 'vo'
+                )
+                'ami' '{a'}ch' 'ou' '{a'}m'
+                (
+                  delete
+                  insert 'a'
+                )
+                'n{ev}mi'
+                (
+                  delete
+                  test aeiou (insert '{nv}')        //jablo-n
+                  test 'y' (insert 'n{ev}')         //kolegy-n{ev}
+                  test consonant (insert 'e{nv}')   //pis-en,  tres-en
+                  set found_suffix
+                )
+                '{ev}ti' '{ev}mi' '{ev}te' '{ev}tem'
+                (
+                  delete
+                  insert '{ev}'
+                )
+                'kami' 'kou' 'k{a'}m'
+                (
+                  delete
+                  insert 'ka'
+                )
+                'at' 'ata' 'atech' 'aty' 'at{u^}m' 'ba' 'ce' 'ci' 'c{i'}ch' 'ec'
+                'ech' 'ek' 'em' 'emi' 'en' 'ev' 'e{nv}' 'ka' 'kem' 'ko' 'ku'
+                'kum' 'ky' 'k{a'}ch' 'k{u^}' 'k{u^}m' 'lo' 'na' 'ni' 'no' 'nu'
+                'ny' 'n{i'}' 'n{i'}ch' 'n{i'}m' 'n{ev}' 'ovi' 'ov{e'}' 'ra'
+                't{ev}' 'um' 'va' 'vo' 'vy' 'z{i'}ch' 'zi' '{i'}ch' '{i'}m' 
+                '{u^}m' 'a' 'e' 'i' 'o' 'u' 'y' '{e'}' '{i'}' '{ev}' '{nv}' '{u^}' 'g' 'k'
+                'vu'
+                (
+                    delete
+                )
+            )
+        )
+    ) //nouns_endings
+
+    define adjectives_suffixes as (
+        do (
+            [substring] R1 among (
+                'ac{i'}' 'a{cv}n{i'}' 'at{y'}' 'av{y'}' 'biln{i'}' 'ck{y'}'
+                'cn{y'}' 'c{i'}' 'en{y'}' 'e{cv}n{i'}' 'e{cv}n{y'}' 'ick{y'}'
+                'ic{i'}' 'ijsk{y'}' 'ilink{y'}' 'il{y'}' 'inkat{y'}' 'ist{y'}'
+                'ivn{i'}' 'i{cv}el{y'}' 'i{cv}it{y'}' 'i{cv}i{cv}k{y'}'
+                'i{cv}n{i'}' 'i{cv}n{y'}' 'kav{y'}' 'lav{y'}' 'liv{y'}' 'l{y'}'
+                'ntn{i'}' 'oulink{y'}' 'ounink{y'}' 'ounk{y'}' 'ou{cv}k{y'}'
+                'ova' 'ovan{y'}' 'ovic' 'ovit{y'}' 'ovn{i'}' 'ovo' 'ov{y'}'
+                'teln{y'}' 'tn{i'}' 'tn{y'}' 'utn{y'}' 'ut{y'}' 'v{y'}'
+                '{a'}ln{i'}' '{a'}nsk{y'}' '{a'}rn{i'}' '{cv}{i'}' '{ev}n{y'}'
+                '{u^}v' 'n{ev}j{sv}{i'}' 'ov{ev}j{sv}{i'}' 'ov{i'}'
+                'ovn{ev}j{sv}{i'}' 'ov{sv}t{ev}j{sv}{i'}' 't{ev}j{sv}{i'}'
+                //'{cv}n{y'}' '{cv}iv{y'}'
+                '{sv}{i'}'
+                (
+                    delete
+                    set found_suffix
+                )
+                'in' 'ina' 'ino' 'it{y'}' 'iv{y'}' 'i{cv}k{y'}' 'ink{y'}'
+                (
+                    delete
+                    alternance_i
+                    set found_suffix
+                )
+                'k{y'}' 'sk{y'}' 'ovsk{y'}' '{sv}t{ev}j{sv}{i'}' 'ij{sv}t{ev}j{sv}{i'}'
+                (
+                    delete
+                    (['{zv}'] <- 'h') or (['{sv}'] <- 'ch')
+                    set found_suffix
+                )
+                'n{y'}' 'n{i'}' 'iteln{y'}'
+                (
+                    delete
+                    (['{zv}'] <- 'h') or (['{sv}'] <- 'ch') or (['{cv}'] <- 'k')
+                    set found_suffix
+                )
+                'nat{y'}'
+                (
+                    delete
+                    (['{cv}'] <- 'k')
+                    set found_suffix
+                )
+                'ej{sv}{i'}' '{ev}j{sv}{i'}'
+                (
+                    delete
+                    (['{cv}'] <- 'k') or
+                    (['{cv}{tv}'] <- 'ck') or
+                    (['{sv}{tv}'] <- 'sk') or
+                    (['{zv}'] <- 'h') or
+                    (['{sv}'] <- 'ch')
+                    set found_suffix
+                )
+            )
+        )
+    ) //adjectives_suffixes
+    
+    define adjectives_endings as (
+        do (
+            [substring] R1 among (
+                'sk{y'}' 'sk{y'}mi' 'sk{y'}m' '{sv}t{ev}j{sv}{i'}' '{sv}t{i'}'
+                'sk{e'}' 'sk{a'}' 'skou' 'sk{y'}ch' 'sk{e'}ho' 'sk{e'}mu' 'sk{e'}m'
+                (
+                  delete
+                  insert 'sk{y'}'
+                )
+                'ck{y'}' '{cv}t{ev}j{sv}{i'}' 'ck{e'}' 'ck{e'}mu' 'ck{y'}mi'
+                'ck{y'}ch' 'ck{y'}m' 'ck{a'}' 'ck{e'}ho' 'ck{e'}m' '{cv}t{i'}' 'ckou'
+                (
+                  delete
+                  insert 'ck{y'}'
+                )
+                'k{y'}' 'k{e'}ho' 'k{y'}m' 'k{e'}mu' 'k{y'}ch' 'k{e'}' 'c{i'}'
+                'k{y'}mi' 'k{a'}' 'kou' 'k{e'}m'
+                (
+                  delete
+                  insert 'k{y'}'
+                )
+                'ch{y'}' 'ch{y'}ch' 'ch{e'}m' 'chou' 'ch{y'}m' 'ch{y'}mi'
+                'ch{e'}mu' 'ch{e'}' '{sv}{sv}{i'}' 'ch{a'}' 'ch{e'}ho'
+                //'{sv}{i'}'
+                (
+                  delete
+                  insert 'ch{y'}'
+                )
+                'h{y'}' 'h{e'}m' 'h{e'}' 'h{a'}' 'h{e'}ho' 'h{y'}ch' 'h{y'}mi'
+                'hou' 'h{y'}m' 'h{e'}mu' '{zv}{sv}{i'}'
+                //'z{i'}'
+                (
+                  delete
+                  insert 'h{y'}'
+                )
+
+                'r{y'}' 'r{sv}{i'}' 'r{e'}mu' 'r{y'}m' 'r{y'}mi' 'r{e'}ho' 'rou'
+                '{rv}ej{sv}{i'}' 'r{a'}' 'r{y'}ch' '{rv}{i'}' 'r{e'}' 'r{e'}m'
+                (
+                  delete
+                  insert 'r{y'}'
+                )
+                'av{i'}'
+                (
+                  delete
+                  insert 'av{y'}'
+                )
+                
+                '{i'}mu' '{i'}mi' '{i'}ho' '{i'}ch' '{i'}m'
+                //'{i'}'
+                (
+                  delete
+                  insert '{i'}'
+                )
+
+                '{u^}v' 'ov{y'}m' 'ovi' 'ovou' 'ov{y'}mi' 'ov{ev}' 'ovy' 'ovu'
+                'ovo' 'ov{y'}ch' 'ova'
+                (
+                  delete
+                  insert '{u^}v'
+                )
+                '{y'}' '{e'}m' '{y'}mi' 'ou' '{e'}mu' '{e'}' '{y'}ch'
+                'ej{sv}{i'}' '{a'}' '{y'}m' '{e'}ho' '{ev}j{sv}{i'}'
+                (
+                  delete
+                  insert '{y'}'
+                )
+                'in' 'in{y'}mi' 'ina' 'inu' 'ino' 'in{y'}ch' 'in{y'}m' 'in{ev}'
+                'ini' 'inou' 'iny'
+                (
+                  delete
+                  insert 'in'
+                )
+                '{i'}'
+                (
+                  delete
+                  insert '{y'}'
+                )
+            )
+        )
+    ) //adjectives_endings
+
+    define verbs_suffixes as (
+        do (
+            [substring] R1 among (
+                'r{a'}t' 'ovat' 'zat' 'nout' 't' 'ct' 'sit' 'et' 'sknout'
+                '{ev}t' '{rv}{i'}t' 'at' 'it' 'stit' 'dit'
+                (
+                    //delete
+                    set found_suffix
+                )
+            )
+        )
+    ) //verbs_suffixes
+
+    define verbs_endings as (
+        do (
+            [substring]  among (
+                'uji' 'ov{a'}no' 'ovali' 'uj{i'}ce' 'uj' 'ujete' 'ov{a'}n'
+                'uju' 'ov{a'}na' 'ujou' 'ov{a'}ny' 'ovalo' 'uj{i'}c'
+                'ujeme' 'ujme' 'ovala' 'ov{a'}ni' 'uj{i'}' 'uje' 'ovaly'
+                'ujte' 'oval' 'uje{sv}'
+                (
+                  delete
+                  insert 'ovat'
+                )
+                'ere{sv}' 'ral' 'ereme' 'erouc' 'eru' 'r{a'}ny' 'ralo'
+                'erete' 'rali' 'erte' 'erme' 'erouce' 'r{a'}n' 'era' 'raly'
+                'r{a'}no' 'r{a'}ni' 'rala' 'er' 'ere' 'r{a'}na' 'erou'
+                (
+                  delete
+                  insert 'r{a'}t'
+                )
+                'jme' 'ji' 'ti' 'ouc' 'a' 'e{sv}' 'u' 'ete' 'li' 'jou' 'ouce'
+                'ty' 'jte' 'j' 'je{sv}' 'ju' 'ta' 'la' 'ly' 'j{i'}ce' 'jeme'
+                'eme' 'j{i'}c' 'lo' 'to' 'j{i'}' 'je' 'jete' 'ou' 'l'
+                (
+                  delete
+                  insert 't'
+                )
+
+                '{zv}e{sv}' 'zal' '{zv}{i'}c' 'z{a'}na' 'zali' '{zv}me' '{zv}te'
+                'z{a'}ni' 'zaly' 'z{a'}n' 'z{a'}no' '{zv}{i'}ce' '{zv}ou'
+                '{zv}eme' '{zv}u' '{zv}ete' 'zala' 'z{a'}ny' '{zv}e' '{zv}' 'zalo'
+                (
+                  delete
+                  insert 'zat'
+                )
+                'ne' 'nuv' 'nouc' 'nou' '{nv}te' 'av{sv}i' 'na' 'nuli' 'neme'
+                'av{sv}e' 'ato' 'n{ev}me' 'ne{sv}' '{nv}me' '{nv}' 'nu' 'av'
+                'nuv{sv}i' 'nulo' 'nul' 'nuto' 'ati' 'nuly' 'ni' 'aty' 'nut'
+                'n{ev}te' 'nuti' 'nuta' 'nete' 'nuty' 'nula' 'at' 'nouce' 'ata'
+                'nuv{sv}e'
+                (
+                  delete
+                  insert 'nout'
+                )
+                '{cv}ete' '{cv}' 'ka' '{cv}eni' 'kouce' 'kla' 'kly' '{cv}ena'
+                '{cv}e{sv}' 'kouc' '{cv}ou' '{cv}u' 'klo' '{cv}te' '{cv}e'
+                '{cv}eny' '{cv}eme' 'kl' '{cv}me' '{cv}en' '{cv}eno' 'kli'
+                (
+                  delete
+                  insert 'ct'
+                )
+                'sily' '{sv}eni' 'se' 's{i'}m' 'sil' '{sv}ena' 's{i'}' 's{i'}c'
+                's{i'}{sv}' 'ste' '{sv}eny' 's' 'sili' 'sila' '{sv}eno' '{sv}en'
+                's{i'}me' 's{i'}te' 'sme' 's{i'}ce' 'silo'
+                (
+                  delete
+                  insert 'sit'
+                )
+                'ely' 'eje' 'ela' 'elo' 'eli' 'ej{i'}' 'ej{i'}c' 'ej{i'}ce' 'el'
+                (
+                  delete
+                  insert 'et'
+                )
+                'sknete' 'skni' 'sknouc' 'skla' 'sknuty' 'sklo' 'sknuto'
+                'skne{sv}' 'sknouce' 'skneme' 'skne' 'skn{ev}me' 'skna' 'skly'
+                'sknou' 'skn{ev}te' 'sknut' 'sknu' 'skli' 'sknuti' 'sknuta' 'skl'
+                (
+                  delete
+                  insert 'sknout'
+                )
+                '{ev}ni' '{ev}l' '{ev}' '{ev}li' '{ev}ly' '{ev}ny' '{ev}na'
+                '{ev}lo' '{ev}n' '{ev}no' '{ev}la'
+                (
+                  delete
+                  insert '{ev}t'
+                )
+                '{rv}e{sv}' '{rv}el' '{rv}eni' '{rv}ely' '{rv}eli' '{rv}i'
+                '{rv}e' 'rouce' '{rv}eny' '{rv}u' '{rv}ena' 'ra' '{rv}ou' 'rouc'
+                '{rv}eno' '{rv}elo' '{rv}ete' '{rv}en' '{rv}ela' '{rv}eme'
+                (
+                  delete
+                  insert '{rv}{i'}t'
+                )
+                '{a'}te' '{a'}' '{a'}ni' '{a'}n' 'aj{i'}' 'aj{i'}c' '{a'}na'
+                '{a'}m' '{a'}ny' 'aje' '{a'}{sv}' '{a'}no' '{a'}me' 'aj{i'}ce'
+                (
+                  delete
+                  insert 'at'
+                )
+                'ila' '{zv}eno' 'z{i'}' 'z{i'}c' 'ze' 'zila' 'z{i'}m' 'z{i'}me'
+                'z{i'}ce' 'z' 'zilo' '{zv}eny' 'zte' 'ili' 'ily' 'z{i'}te'
+                'zili' 'il' 'zil' 'zme' 'ilo' '{zv}ena' '{zv}en' 'z{i'}{sv}'
+                'zily' '{zv}eni'
+                (
+                  delete
+                  insert 'zit'
+                )
+                'st{ev}ny' 'st{ev}me' 'st{ev}n' 'stily' 'st{i'}c' 'stila'
+                'st{ev}ni' 'stili' 'st{i'}' 'st{ev}na' 'st{ev}te' 'st{i'}{sv}'
+                'st{i'}m' 'st{i'}te' 'st{i'}me' 'st{ev}no' 'st{i'}ce' 'st{ev}'
+                'stilo' 'sti' 'stil'
+                (
+                  delete
+                  insert 'stit'
+                )
+                'd{i'}me' 'd{i'}' 'd{i'}m' 'zen' 'zeno' 'd{i'}te' 'dily' 'dil'
+                'dilo' 'd{i'}c' '{dv}me' 'd{i'}{sv}' 'dili' 'zeni' 'd{i'}ce'
+                'zena' '{dv}' 'zeny' 'dila' 'd{ev}' '{dv}te'
+                (
+                  delete
+                  insert 'dit'
+                )
+                
+                'eny' 'me' 'ejme' '{sv}t{ev}ni' 'al' '{sv}t{ev}no' '{i'}m' 'ali'
+                '{i'}me' '{i'}ce' 'en' '{sv}t{ev}n' '{sv}t{ev}na' 'aly' '{i'}te'
+                'ena' 'ejte' 'ala' 'eni' 'eno' 'alo' '{i'}{sv}' '{sv}t{ev}ny'
+                'ej' '{i'}c' 'te'
+                (
+                  delete
+                )
+            )
+        )
+    ) //verbs_endings
+
+    define adverbs_suffixes as (
+        do (
+            [substring] R1 among (
+                'ky' 'mo' 'si' 'koli' 'koliv' 'hle'
+                (
+                    delete
+                    set found_suffix
+                )
+            )
+        )
+    )
+
+    define end_vowel as (
+        [vowel] <- ''
+        [vowel] <- ''
+    )
+
+    define alternance_i as (
+        (['{cv}'] <- 'k') or (['{sv}'] <- 'ch')
+    )
+
+    define end_double as (
+        test substring among(
+            'bb' 'dd' 'ff' 'gg' 'mm' 'nn' 'pp' 'rr' 'tt'
+            ([next]  delete)
+        )
+    )
+    
+
+)//backwardmode
+
+define stem as (
+    exception or
+    not hop 4 or (
+        do mark_regions
+        unset found_suffix
+        backwards (
+            do nouns_suffixes
+            found_suffix or do nouns_endings
+            found_suffix or do nouns_suffixes
+
+            found_suffix or do adjectives_suffixes
+            found_suffix or do adjectives_endings
+            found_suffix or do adjectives_suffixes
+
+            found_suffix or adverbs_suffixes
+
+            //found_suffix or do verbs_suffixes
+            found_suffix or do verbs_endings
+            found_suffix or do verbs_suffixes
+
+            do end_double
+            do end_vowel
+            do end_double
+        )
+    )
+    do postlude
+)

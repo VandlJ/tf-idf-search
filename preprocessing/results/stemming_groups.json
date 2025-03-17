@@ -1,0 +1,2382 @@
+{
+  "roc": [
+    "roce",
+    "roc"
+  ],
+  "volkswag": [
+    "volkswagen",
+    "volkswagenu"
+  ],
+  "zaklad": [
+    "zakladni",
+    "zakladu",
+    "zaklad",
+    "zaklady",
+    "zakladem",
+    "zakladateli"
+  ],
+  "kot": [
+    "kola",
+    "koly"
+  ],
+  "skod": [
+    "skoda",
+    "skody",
+    "skodovky"
+  ],
+  "konout": [
+    "koni",
+    "kona"
+  ],
+  "peug": [
+    "peugeot",
+    "peugeotu"
+  ],
+  "zad": [
+    "zadni",
+    "zadna",
+    "zadi"
+  ],
+  "automobil": [
+    "automobilka",
+    "automobilek"
+  ],
+  "led": [
+    "led",
+    "ledna"
+  ],
+  "pred": [
+    "predni",
+    "prednostem",
+    "predmety",
+    "predu"
+  ],
+  "ford": [
+    "ford",
+    "fordu"
+  ],
+  "palc": [
+    "palcova",
+    "palcovy",
+    "palcu",
+    "palcovou",
+    "palcove"
+  ],
+  "minout": [
+    "mini",
+    "minut"
+  ],
+  "aut": [
+    "auto",
+    "auta",
+    "aut",
+    "aute",
+    "autech",
+    "auty",
+    "autem"
+  ],
+  "kol": [
+    "kol",
+    "koleny"
+  ],
+  "vyk": [
+    "vykonem",
+    "vykonu",
+    "vykony"
+  ],
+  "muzit": [
+    "muzete",
+    "muzea"
+  ],
+  "svetl": [
+    "svetlomety",
+    "svetlometu"
+  ],
+  "aud": [
+    "audi",
+    "audio"
+  ],
+  "dojezd": [
+    "dojezd",
+    "dojezdem",
+    "dojezdu"
+  ],
+  "vybt": [
+    "vybava",
+    "vybavu",
+    "vybavy"
+  ],
+  "sed": [
+    "sedadla",
+    "sedadel",
+    "sedadly",
+    "sede",
+    "sedan",
+    "sedem",
+    "seda",
+    "sedadlem"
+  ],
+  "bater": [
+    "baterii",
+    "bateriovy"
+  ],
+  "poh": [
+    "pohonem",
+    "pohonu",
+    "pohony",
+    "pohybu",
+    "pohyby"
+  ],
+  "dac": [
+    "dacia",
+    "dacie",
+    "dacii"
+  ],
+  "cesit": [
+    "cesky",
+    "cesku",
+    "ceskem"
+  ],
+  "mod": [
+    "modelu",
+    "modely",
+    "moderni",
+    "modelem"
+  ],
+  "litrit": [
+    "litru",
+    "litry"
+  ],
+  "elektric": [
+    "elektricky",
+    "elektricka",
+    "elektrickou",
+    "elektrickem"
+  ],
+  "vsech": [
+    "vsech",
+    "vsechny",
+    "vsechna"
+  ],
+  "vozit": [
+    "vozy",
+    "vozu",
+    "vozum",
+    "voze",
+    "vozem"
+  ],
+  "c": [
+    "ceny",
+    "cene",
+    "cena",
+    "cenovy",
+    "ceniku"
+  ],
+  "kapacit": [
+    "kapacite",
+    "kapacity",
+    "kapacitu",
+    "kapacit"
+  ],
+  "toyot": [
+    "toyota",
+    "toyotu",
+    "toyote"
+  ],
+  "park": [
+    "parkovaci",
+    "parkovani"
+  ],
+  "standard": [
+    "standardni",
+    "standardem",
+    "standardu",
+    "standard",
+    "standardum"
+  ],
+  "sport": [
+    "sportovni",
+    "sport",
+    "sportline"
+  ],
+  "finout": [
+    "fiat",
+    "fiatu"
+  ],
+  "motorit": [
+    "motor",
+    "motory",
+    "motoru"
+  ],
+  "vetsit": [
+    "vetsi",
+    "vetsine"
+  ],
+  "vykon": [
+    "vykon",
+    "vykonove",
+    "vykonna"
+  ],
+  "infotain": [
+    "infotainment",
+    "infotainmentu"
+  ],
+  "automatic": [
+    "automatickou",
+    "automaticka",
+    "automaticky"
+  ],
+  "rad": [
+    "rady",
+    "rada",
+    "radu",
+    "rade",
+    "radio",
+    "radnem",
+    "radici"
+  ],
+  "renault": [
+    "renault",
+    "renaultem",
+    "renaultu"
+  ],
+  "pohon": [
+    "pohon",
+    "pohonnou"
+  ],
+  "sekund": [
+    "sekundy",
+    "sekund"
+  ],
+  "senzorit": [
+    "senzory",
+    "senzoru"
+  ],
+  "znac": [
+    "znacky",
+    "znacka",
+    "znacku",
+    "znacek",
+    "znacce"
+  ],
+  "vybavt": [
+    "vybavou",
+    "vybavami"
+  ],
+  "spal": [
+    "spalovaci",
+    "spalovaku"
+  ],
+  "bat": [
+    "baterie",
+    "baterky"
+  ],
+  "mist": [
+    "misto",
+    "mista",
+    "mist",
+    "miste",
+    "misty"
+  ],
+  "pum": [
+    "puma",
+    "pumy"
+  ],
+  "hybrid": [
+    "hybridni",
+    "hybrid",
+    "hybridem",
+    "hybridu",
+    "hybridy"
+  ],
+  "asist": [
+    "asistentu",
+    "asistent",
+    "asistentem",
+    "asistenty",
+    "asistenci"
+  ],
+  "vol": [
+    "volant",
+    "volantu",
+    "volantem",
+    "volby",
+    "volba",
+    "volbou",
+    "volbu"
+  ],
+  "op": [
+    "opel",
+    "opelu",
+    "operku"
+  ],
+  "korun": [
+    "korun",
+    "korunku"
+  ],
+  "patr": [
+    "patri",
+    "patrici"
+  ],
+  "novt": [
+    "nova",
+    "novou"
+  ],
+  "vyrab": [
+    "vyrabi",
+    "vyraben",
+    "vyrabela"
+  ],
+  "nabid": [
+    "nabidce",
+    "nabidku",
+    "nabidky",
+    "nabidka",
+    "nabidkou"
+  ],
+  "druh": [
+    "druhe",
+    "druha",
+    "druhy"
+  ],
+  "funk": [
+    "funkci",
+    "funkce"
+  ],
+  "nabidn": [
+    "nabidne",
+    "nabidnout"
+  ],
+  "pan": [
+    "panamera",
+    "panelu"
+  ],
+  "calounout": [
+    "calouneni",
+    "calouneny"
+  ],
+  "moment": [
+    "momentu",
+    "momentem",
+    "moment"
+  ],
+  "motor": [
+    "motorem",
+    "motorovou",
+    "motoren"
+  ],
+  "let": [
+    "letech",
+    "lety",
+    "letenky",
+    "letadla"
+  ],
+  "cist": [
+    "ciste",
+    "cistou"
+  ],
+  "var": [
+    "varianta",
+    "varianty",
+    "variantu",
+    "variant"
+  ],
+  "cen": [
+    "cenovku",
+    "cenik",
+    "cenove",
+    "cenovkou",
+    "cenovky",
+    "cenou",
+    "cenovou",
+    "cenovkami",
+    "cen",
+    "cenovka"
+  ],
+  "pripad": [
+    "pripade",
+    "pripadem",
+    "pripadech"
+  ],
+  "automob": [
+    "automobilu",
+    "automobily"
+  ],
+  "predevsim": [
+    "predevsim",
+    "predevsimi"
+  ],
+  "vybnout": [
+    "vybave",
+    "vybav",
+    "vybaven"
+  ],
+  "rezim": [
+    "rezimu",
+    "rezim",
+    "rezimem"
+  ],
+  "maxim": [
+    "maximalni",
+    "maximum"
+  ],
+  "dost": [
+    "dost",
+    "dostat",
+    "dostala",
+    "dostava",
+    "dostani",
+    "dostane"
+  ],
+  "elektrom": [
+    "elektromotor",
+    "elektromotorem"
+  ],
+  "zajistit": [
+    "zajisti",
+    "zajistit"
+  ],
+  "kufrit": [
+    "kufru",
+    "kufr"
+  ],
+  "vyhriv": [
+    "vyhrivana",
+    "vyhrivane"
+  ],
+  "kamrat": [
+    "kamerou",
+    "kameru"
+  ],
+  "mir": [
+    "miri",
+    "mirici"
+  ],
+  "prod": [
+    "prodeje",
+    "prodejni",
+    "prodej",
+    "prodeji",
+    "prodeju",
+    "prodejci",
+    "prodejny"
+  ],
+  "nabit": [
+    "nabijeni",
+    "nabijeci"
+  ],
+  "paket": [
+    "paket",
+    "paketu",
+    "pakety"
+  ],
+  "skup": [
+    "skupiny",
+    "skupina"
+  ],
+  "ces": [
+    "ceska",
+    "ceskou",
+    "cesko"
+  ],
+  "elektromob": [
+    "elektromobilu",
+    "elektromobily"
+  ],
+  "stov": [
+    "stovku",
+    "stovce"
+  ],
+  "vyhrivt": [
+    "vyhrivani",
+    "vyhrivany"
+  ],
+  "mil": [
+    "milionu",
+    "miliony"
+  ],
+  "kodiaq": [
+    "kodiaq",
+    "kodiaqu"
+  ],
+  "letosit": [
+    "letos",
+    "letosni"
+  ],
+  "stran": [
+    "strance",
+    "stran",
+    "strany",
+    "strane"
+  ],
+  "zrcnout": [
+    "zrcatka",
+    "zrcatko",
+    "zrcatkem",
+    "zrcatky"
+  ],
+  "dostup": [
+    "dostupny",
+    "dostupna",
+    "dostupnost",
+    "dostupnou"
+  ],
+  "ctyrval": [
+    "ctyrvalec",
+    "ctyrvalce",
+    "ctyrvalcem"
+  ],
+  "jezd": [
+    "jezdi",
+    "jezdeni"
+  ],
+  "vyr": [
+    "vyroba",
+    "vyroby",
+    "vyroci",
+    "vyrobou",
+    "vyrovna"
+  ],
+  "moz": [
+    "moznost",
+    "moznou"
+  ],
+  "syst": [
+    "system",
+    "systemovy"
+  ],
+  "pruh": [
+    "pruhu",
+    "pruhonice"
+  ],
+  "displ": [
+    "displej",
+    "displeju",
+    "displeje",
+    "displejem"
+  ],
+  "vyrob": [
+    "vyrobce",
+    "vyrobcem"
+  ],
+  "grandland": [
+    "grandland",
+    "grandlandu"
+  ],
+  "nov": [
+    "novinka",
+    "nove",
+    "novinkou",
+    "novinku",
+    "novinky"
+  ],
+  "tech": [
+    "tech",
+    "techno",
+    "technice"
+  ],
+  "cet": [
+    "celkem",
+    "celou",
+    "celni",
+    "cela"
+  ],
+  "lak": [
+    "lak",
+    "lakovani"
+  ],
+  "ok": [
+    "okno",
+    "okna",
+    "okolo",
+    "oken",
+    "oknech"
+  ],
+  "zac": [
+    "zacala",
+    "zacina",
+    "zacalo",
+    "zacal",
+    "zacinat"
+  ],
+  "metrit": [
+    "metru",
+    "metr"
+  ],
+  "odst": [
+    "odstiny",
+    "odstinem",
+    "odstin"
+  ],
+  "senz": [
+    "senzor",
+    "senzorem"
+  ],
+  "ur": [
+    "urovni",
+    "uroven"
+  ],
+  "znam": [
+    "znamena",
+    "znamy",
+    "zname",
+    "znama",
+    "znamem"
+  ],
+  "plnout": [
+    "plne",
+    "plna",
+    "plati"
+  ],
+  "nad": [
+    "nadale",
+    "nadech"
+  ],
+  "vznict": [
+    "vznikl",
+    "vznika"
+  ],
+  "automobzit": [
+    "automobilku",
+    "automobilky",
+    "automobil",
+    "automobili"
+  ],
+  "pot": [
+    "pote",
+    "polo"
+  ],
+  "octav": [
+    "octavia",
+    "octavie",
+    "octavii"
+  ],
+  "system": [
+    "systemu",
+    "systemem",
+    "systemy",
+    "systemovem"
+  ],
+  "firm": [
+    "firma",
+    "firmu",
+    "firmy"
+  ],
+  "car": [
+    "carrera",
+    "car",
+    "carlo"
+  ],
+  "konfigur": [
+    "konfigurator",
+    "konfigurovat"
+  ],
+  "jed": [
+    "jedinou",
+    "jedine",
+    "jednu",
+    "jedina",
+    "jediny",
+    "jedna"
+  ],
+  "komb": [
+    "kombinaci",
+    "kombi",
+    "kombikem"
+  ],
+  "prostorit": [
+    "prostoru",
+    "prostory"
+  ],
+  "soub": [
+    "soubor",
+    "souborem"
+  ],
+  "tig": [
+    "tiguan",
+    "tiguanem"
+  ],
+  "elektr": [
+    "elektrinu",
+    "elektrina"
+  ],
+  "prevod": [
+    "prevodovkou",
+    "prevodovka",
+    "prevodovky"
+  ],
+  "nabij": [
+    "nabijecku",
+    "nabijecky"
+  ],
+  "bezdrat": [
+    "bezdratovou",
+    "bezdratove"
+  ],
+  "cerv": [
+    "cervene",
+    "cervenci"
+  ],
+  "podvozit": [
+    "podvozku",
+    "podvozkem"
+  ],
+  "nem": [
+    "nemecky",
+    "nem",
+    "nema",
+    "nemecku",
+    "nemec",
+    "nemeckem"
+  ],
+  "ovladt": [
+    "ovladl",
+    "ovladani"
+  ],
+  "nastav": [
+    "nastavitelna",
+    "nastaveni",
+    "nastavitelny",
+    "nastaveny",
+    "nastavitelnou"
+  ],
+  "uved": [
+    "uvedeni",
+    "uvedeny"
+  ],
+  "premirat": [
+    "premiery",
+    "premieru"
+  ],
+  "kon": [
+    "konci",
+    "koncem",
+    "konce",
+    "konec"
+  ],
+  "styl": [
+    "style",
+    "stylingu",
+    "stylove",
+    "stylingem",
+    "stylovka"
+  ],
+  "mesic": [
+    "mesicu",
+    "mesicni"
+  ],
+  "platform": [
+    "platforme",
+    "platformy",
+    "platform"
+  ],
+  "zab": [
+    "zabere",
+    "zaber"
+  ],
+  "puvod": [
+    "puvodni",
+    "puvodem"
+  ],
+  "prah": [
+    "prahy",
+    "praha"
+  ],
+  "tem": [
+    "temer",
+    "temi"
+  ],
+  "zar": [
+    "zaroven",
+    "zarizeni",
+    "zari",
+    "zaruka"
+  ],
+  "m": [
+    "mene",
+    "maly",
+    "meni"
+  ],
+  "predstav": [
+    "predstavila",
+    "predstaveny",
+    "predstavena",
+    "predstavilo"
+  ],
+  "vysit": [
+    "vyse",
+    "vysky"
+  ],
+  "prem": [
+    "premium",
+    "premiovy",
+    "premiere",
+    "premiove",
+    "premiera"
+  ],
+  "bezklic": [
+    "bezklicovy",
+    "bezklicove"
+  ],
+  "mest": [
+    "mesta",
+    "mestech",
+    "meste",
+    "mestem"
+  ],
+  "rodin": [
+    "rodinne",
+    "rodinna"
+  ],
+  "tyd": [
+    "tyden",
+    "tydny"
+  ],
+  "akumul": [
+    "akumulator",
+    "akumulatorem"
+  ],
+  "air": [
+    "air",
+    "airbag"
+  ],
+  "financ": [
+    "financovani",
+    "financial",
+    "financovat",
+    "financni"
+  ],
+  "stred": [
+    "stredni",
+    "stredova",
+    "stredovem",
+    "stredove"
+  ],
+  "akont": [
+    "akontaci",
+    "akontace"
+  ],
+  "toc": [
+    "tocivy",
+    "tocivem"
+  ],
+  "jizd": [
+    "jizdy",
+    "jizdu",
+    "jizde",
+    "jizda",
+    "jizdni",
+    "jizd"
+  ],
+  "start": [
+    "startovni",
+    "startovani",
+    "startem",
+    "start"
+  ],
+  "latk": [
+    "latkove",
+    "latkovy",
+    "latkova"
+  ],
+  "vybav": [
+    "vybaveno",
+    "vybavena",
+    "vybavenem"
+  ],
+  "prid": [
+    "prida",
+    "pridi",
+    "pridanou"
+  ],
+  "zakaznout": [
+    "zakazniky",
+    "zakazniku",
+    "zakaznici"
+  ],
+  "milion": [
+    "milion",
+    "milionovou"
+  ],
+  "hatchbac": [
+    "hatchback",
+    "hatchbacku"
+  ],
+  "ctyrkol": [
+    "ctyrkolka",
+    "ctyrkolkou"
+  ],
+  "voz": [
+    "vozidla",
+    "vozidel",
+    "vozovy",
+    "vozitko",
+    "vozovku",
+    "vozidlech"
+  ],
+  "desig": [
+    "designu",
+    "designem",
+    "designy"
+  ],
+  "zastoup": [
+    "zastoupeni",
+    "zastoupi"
+  ],
+  "zahrnovat": [
+    "zahrnuje",
+    "zahrnuji"
+  ],
+  "dlouh": [
+    "dlouhe",
+    "dlouho",
+    "dlouhy",
+    "dlouha"
+  ],
+  "kap": [
+    "kapotou",
+    "kapotu",
+    "kapote"
+  ],
+  "desit": [
+    "desky",
+    "deseti",
+    "desitek"
+  ],
+  "sknout": [
+    "skla",
+    "sklo"
+  ],
+  "pros": [
+    "prostor",
+    "prostorem",
+    "prosince",
+    "prosel",
+    "prosla"
+  ],
+  "zazit": [
+    "zazemi",
+    "zazitky",
+    "zazitek"
+  ],
+  "obsahovat": [
+    "obsahuje",
+    "obsahujici"
+  ],
+  "uzitk": [
+    "uzitkove",
+    "uzitkovou"
+  ],
+  "mnoh": [
+    "mnoha",
+    "mnohe",
+    "mnohem",
+    "mnoho"
+  ],
+  "proc": [
+    "procent",
+    "procenta",
+    "procenty",
+    "procentni"
+  ],
+  "vyleps": [
+    "vylepsena",
+    "vylepsenou",
+    "vylepsila",
+    "vylepsene"
+  ],
+  "elektromotorit": [
+    "elektromotoru",
+    "elektromotory"
+  ],
+  "rid": [
+    "ridice",
+    "ridicem",
+    "ridici",
+    "ride"
+  ],
+  "par": [
+    "par",
+    "park",
+    "parize",
+    "parizi",
+    "parem"
+  ],
+  "komfort": [
+    "komfortu",
+    "komfort",
+    "komfortni"
+  ],
+  "lakov": [
+    "lakovane",
+    "lakovanou",
+    "lakovano",
+    "lakovana",
+    "lakovan"
+  ],
+  "strech": [
+    "strechy",
+    "strechu"
+  ],
+  "tonov": [
+    "tonovana",
+    "tonovane"
+  ],
+  "klasic": [
+    "klasicky",
+    "klasickou"
+  ],
+  "pristup": [
+    "pristup",
+    "pristupem"
+  ],
+  "specifik": [
+    "specifikace",
+    "specifikovany"
+  ],
+  "svet": [
+    "svetla",
+    "svetove",
+    "svetly",
+    "svetovou",
+    "svetovy"
+  ],
+  "benzinovym": [
+    "benzinovym",
+    "benzinovymi"
+  ],
+  "ved": [
+    "vedouci",
+    "vedi",
+    "vedeni"
+  ],
+  "cl": [
+    "clen",
+    "clio"
+  ],
+  "lid": [
+    "lidovy",
+    "lidi",
+    "lidove",
+    "lide"
+  ],
+  "tour": [
+    "touran",
+    "tourer"
+  ],
+  "det": [
+    "delku",
+    "delky",
+    "detaily",
+    "detailem"
+  ],
+  "oc": [
+    "ocelova",
+    "oceni"
+  ],
+  "zadnim": [
+    "zadnimi",
+    "zadnim"
+  ],
+  "cast": [
+    "casto",
+    "castce",
+    "castku",
+    "cast"
+  ],
+  "sklop": [
+    "sklopeni",
+    "sklopna"
+  ],
+  "poskytn": [
+    "poskytne",
+    "poskytnout"
+  ],
+  "dynam": [
+    "dynamika",
+    "dynamiku"
+  ],
+  "podob": [
+    "podobna",
+    "podobe",
+    "podobnost"
+  ],
+  "splnout": [
+    "splatky",
+    "splatka",
+    "splatku"
+  ],
+  "vylep": [
+    "vylepseny",
+    "vylepseni"
+  ],
+  "met": [
+    "mela",
+    "mely",
+    "melo"
+  ],
+  "portfot": [
+    "portfoliu",
+    "portfolia"
+  ],
+  "objev": [
+    "objevila",
+    "objevi"
+  ],
+  "cernym": [
+    "cernymi",
+    "cernym"
+  ],
+  "dopln": [
+    "doplnky",
+    "doplnena",
+    "doplnku"
+  ],
+  "panoramatic": [
+    "panoramatickou",
+    "panoramaticka"
+  ],
+  "stavt": [
+    "stavu",
+    "stava"
+  ],
+  "kab": [
+    "kabine",
+    "kabiny",
+    "kabely",
+    "kabinu"
+  ],
+  "clon": [
+    "clonou",
+    "clony",
+    "clon"
+  ],
+  "svt": [
+    "svou",
+    "svete"
+  ],
+  "konc": [
+    "koncernu",
+    "koncovky"
+  ],
+  "dock": [
+    "dockal",
+    "dockalo",
+    "dockali"
+  ],
+  "technout": [
+    "techniku",
+    "techniky"
+  ],
+  "nabijec": [
+    "nabijeckou",
+    "nabijecka"
+  ],
+  "objevovat": [
+    "objevuji",
+    "objevuje"
+  ],
+  "dalsim": [
+    "dalsimi",
+    "dalsim"
+  ],
+  "ak": [
+    "akci",
+    "akorat",
+    "akce"
+  ],
+  "evrop": [
+    "evropy",
+    "evrope"
+  ],
+  "prim": [
+    "primo",
+    "primku"
+  ],
+  "star": [
+    "stari",
+    "starem"
+  ],
+  "narust": [
+    "narust",
+    "narusta",
+    "narustu"
+  ],
+  "techn": [
+    "technika",
+    "technikou"
+  ],
+  "couvt": [
+    "couvani",
+    "couvaci"
+  ],
+  "brits": [
+    "britska",
+    "britsko"
+  ],
+  "spotr": [
+    "spotreba",
+    "spotreby"
+  ],
+  "ser": [
+    "seriove",
+    "seriovou",
+    "seriova"
+  ],
+  "priplnout": [
+    "priplatku",
+    "priplatkem"
+  ],
+  "sloup": [
+    "sloupku",
+    "sloupek"
+  ],
+  "dodt": [
+    "dodava",
+    "dodani",
+    "dodany"
+  ],
+  "dod": [
+    "dodavka",
+    "dodat"
+  ],
+  "test": [
+    "testovaci",
+    "testech"
+  ],
+  "showroom": [
+    "showroomu",
+    "showroomy",
+    "showroomem",
+    "showroom"
+  ],
+  "servisit": [
+    "servisni",
+    "servis"
+  ],
+  "produk": [
+    "produkce",
+    "produkci"
+  ],
+  "jar": [
+    "jare",
+    "jaro"
+  ],
+  "omlaz": [
+    "omlazena",
+    "omlazovani"
+  ],
+  "uv": [
+    "uvedla",
+    "uverem",
+    "uvitaci",
+    "uvest",
+    "uvedlo"
+  ],
+  "dobt": [
+    "doba",
+    "dobu"
+  ],
+  "moderniz": [
+    "modernizace",
+    "modernizovany"
+  ],
+  "d": [
+    "dual",
+    "dalo",
+    "denni"
+  ],
+  "p": [
+    "pameti",
+    "pomezi"
+  ],
+  "boc": [
+    "bocni",
+    "bocnice"
+  ],
+  "pic": [
+    "picanto",
+    "pick"
+  ],
+  "tak": [
+    "takova",
+    "takovy"
+  ],
+  "styt": [
+    "styl",
+    "stylovy"
+  ],
+  "seg": [
+    "segmentu",
+    "segmenty",
+    "segmentech"
+  ],
+  "rict": [
+    "rika",
+    "rict"
+  ],
+  "dodnout": [
+    "dodatkem",
+    "dodavku"
+  ],
+  "prest": [
+    "prestoze",
+    "presuny"
+  ],
+  "jednod": [
+    "jednoduse",
+    "jednoduchou"
+  ],
+  "spot": [
+    "spojeni",
+    "spojeny",
+    "spojen"
+  ],
+  "presn": [
+    "presne",
+    "presneji"
+  ],
+  "intelig": [
+    "inteligentni",
+    "inteligence"
+  ],
+  "nekol": [
+    "nekolika",
+    "nekolik"
+  ],
+  "balic": [
+    "balicku",
+    "balicek",
+    "balickem"
+  ],
+  "prednim": [
+    "prednim",
+    "prednimi"
+  ],
+  "prij": [
+    "prijela",
+    "prijala",
+    "prijelo"
+  ],
+  "nej": [
+    "nej",
+    "nejakou"
+  ],
+  "sedac": [
+    "sedacky",
+    "sedacek"
+  ],
+  "pouz": [
+    "pouziva",
+    "pouzitou"
+  ],
+  "mas": [
+    "masce",
+    "masovou",
+    "maska",
+    "masaze"
+  ],
+  "ctyrkot": [
+    "ctyrkolky",
+    "ctyrkolku"
+  ],
+  "vet": [
+    "velky",
+    "velci",
+    "vela"
+  ],
+  "objednnout": [
+    "objednavat",
+    "objednavky"
+  ],
+  "man": [
+    "manualni",
+    "manual"
+  ],
+  "kombin": [
+    "kombinovat",
+    "kombinace"
+  ],
+  "ovlad": [
+    "ovladana",
+    "ovladane"
+  ],
+  "tabul": [
+    "tabulce",
+    "tabulka"
+  ],
+  "prac": [
+    "prace",
+    "praci"
+  ],
+  "pohybovat": [
+    "pohybuji",
+    "pohybuje"
+  ],
+  "stnout": [
+    "stavi",
+    "statni",
+    "stat"
+  ],
+  "urcit": [
+    "urcite",
+    "urcity"
+  ],
+  "oper": [
+    "operadel",
+    "operka"
+  ],
+  "kazd": [
+    "kazda",
+    "kazdem",
+    "kazde"
+  ],
+  "tradicnim": [
+    "tradicnim",
+    "tradicnimi"
+  ],
+  "chtet": [
+    "chteli",
+    "chtel"
+  ],
+  "vaz": [
+    "vazi",
+    "vazilo"
+  ],
+  "odem": [
+    "odemykani",
+    "odemyka"
+  ],
+  "lin": [
+    "linie",
+    "linek"
+  ],
+  "novym": [
+    "novym",
+    "novymi"
+  ],
+  "priprav": [
+    "pripravila",
+    "pripraveny"
+  ],
+  "os": [
+    "osoby",
+    "osobu"
+  ],
+  "probih": [
+    "probiha",
+    "probihala"
+  ],
+  "niz": [
+    "niz",
+    "nizkou"
+  ],
+  "zavodn": [
+    "zavodnik",
+    "zavodnikovi"
+  ],
+  "des": [
+    "desce",
+    "deska"
+  ],
+  "pokroc": [
+    "pokrocile",
+    "pokrocily",
+    "pokrocilo"
+  ],
+  "trival": [
+    "trivalcem",
+    "trivalec"
+  ],
+  "vec": [
+    "veci",
+    "veceri"
+  ],
+  "dvouspojk": [
+    "dvouspojkovou",
+    "dvouspojkove"
+  ],
+  "list": [
+    "listy",
+    "listky"
+  ],
+  "zajistovat": [
+    "zajistuje",
+    "zajistujici"
+  ],
+  "smrat": [
+    "smerech",
+    "smerem"
+  ],
+  "zmin": [
+    "zminene",
+    "zminenou",
+    "zminena"
+  ],
+  "stup": [
+    "stupnovy",
+    "stupnu"
+  ],
+  "st": [
+    "stal",
+    "stala",
+    "stla",
+    "stejny"
+  ],
+  "dob": [
+    "doby",
+    "dobe",
+    "dobra"
+  ],
+  "pet": [
+    "peti",
+    "petka"
+  ],
+  "zust": [
+    "zustala",
+    "zustanou",
+    "zustava"
+  ],
+  "doraz": [
+    "dorazilo",
+    "dorazila"
+  ],
+  "zdraz": [
+    "zdrazilo",
+    "zdrazila"
+  ],
+  "sc": [
+    "scala",
+    "scene"
+  ],
+  "kombinov": [
+    "kombinovanem",
+    "kombinovane",
+    "kombinovana"
+  ],
+  "specific": [
+    "specificky",
+    "specificka"
+  ],
+  "zacnout": [
+    "zacatku",
+    "zacatkem"
+  ],
+  "stej": [
+    "stejnou",
+    "stejna"
+  ],
+  "sportovn": [
+    "sportovne",
+    "sportovneji"
+  ],
+  "design": [
+    "designove",
+    "designovou"
+  ],
+  "pak": [
+    "paketem",
+    "paky"
+  ],
+  "udat": [
+    "udaju",
+    "udaje"
+  ],
+  "technic": [
+    "technickou",
+    "technicky"
+  ],
+  "ekvival": [
+    "ekvivalent",
+    "ekvivalentem"
+  ],
+  "bzit": [
+    "bily",
+    "bilou"
+  ],
+  "pusob": [
+    "pusobi",
+    "pusobeni"
+  ],
+  "sportovnim": [
+    "sportovnimi",
+    "sportovnim"
+  ],
+  "nech": [
+    "nechcete",
+    "nechtel",
+    "nechat"
+  ],
+  "resit": [
+    "resit",
+    "reseny"
+  ],
+  "dies": [
+    "dieselu",
+    "diesel"
+  ],
+  "virt": [
+    "virtualni",
+    "virtual"
+  ],
+  "spolujezd": [
+    "spolujezdce",
+    "spolujezdcem"
+  ],
+  "metalizit": [
+    "metalizu",
+    "metaliz",
+    "metaliza"
+  ],
+  "trid": [
+    "tridy",
+    "tride",
+    "tridu",
+    "tridenni"
+  ],
+  "dvoulitr": [
+    "dvoulitrovy",
+    "dvoulitrem"
+  ],
+  "hod": [
+    "hodiny",
+    "hodin"
+  ],
+  "bar": [
+    "barvu",
+    "barvy",
+    "barev"
+  ],
+  "spec": [
+    "specialni",
+    "special"
+  ],
+  "jist": [
+    "jiste",
+    "jistotu"
+  ],
+  "trend": [
+    "trend",
+    "trendy",
+    "trendu"
+  ],
+  "benzin": [
+    "benzinove",
+    "benzinovou"
+  ],
+  "airbag": [
+    "airbagu",
+    "airbagy"
+  ],
+  "posuv": [
+    "posuvnou",
+    "posuvna"
+  ],
+  "ped": [
+    "pedaly",
+    "pedalem",
+    "pedalu"
+  ],
+  "znak": [
+    "znak",
+    "znaky"
+  ],
+  "benz": [
+    "benzinovy",
+    "benziny"
+  ],
+  "um": [
+    "umele",
+    "umela"
+  ],
+  "cer": [
+    "cerna",
+    "cernou",
+    "cernem"
+  ],
+  "vstup": [
+    "vstupu",
+    "vstupni",
+    "vstupenky",
+    "vstup"
+  ],
+  "bez": [
+    "bezove",
+    "beznem",
+    "bezova",
+    "bezovem"
+  ],
+  "kombinovat": [
+    "kombinuje",
+    "kombinujici"
+  ],
+  "eleg": [
+    "elegance",
+    "elegan"
+  ],
+  "zatmav": [
+    "zatmavena",
+    "zatmavene"
+  ],
+  "motocyk": [
+    "motocyklu",
+    "motocykly"
+  ],
+  "akcn": [
+    "akcne",
+    "akcneji"
+  ],
+  "rozsir": [
+    "rozsirenou",
+    "rozsirila",
+    "rozsireny",
+    "rozsirene",
+    "rozsireni"
+  ],
+  "planovat": [
+    "planuje",
+    "planuji"
+  ],
+  "naklad": [
+    "nakladovy",
+    "nakladu"
+  ],
+  "zbyt": [
+    "zbytek",
+    "zbyl"
+  ],
+  "obraz": [
+    "obrazovka",
+    "obrazovkou"
+  ],
+  "soutezit": [
+    "soutez",
+    "soutezni"
+  ],
+  "zavod": [
+    "zavodu",
+    "zavod",
+    "zavode"
+  ],
+  "sklad": [
+    "skladove",
+    "skladovem",
+    "skladat"
+  ],
+  "liftbac": [
+    "liftback",
+    "liftbackem"
+  ],
+  "historic": [
+    "historicky",
+    "historica"
+  ],
+  "posad": [
+    "posadka",
+    "posadky"
+  ],
+  "imprezit": [
+    "impreza",
+    "imprezu"
+  ],
+  "nabizet": [
+    "nabizet",
+    "nabizejici"
+  ],
+  "privesit": [
+    "privesu",
+    "privesem"
+  ],
+  "rozv": [
+    "rozvorem",
+    "rozvor"
+  ],
+  "akustic": [
+    "akusticky",
+    "akusticka"
+  ],
+  "uprit": [
+    "upravu",
+    "upravy"
+  ],
+  "podlah": [
+    "podlahove",
+    "podlahu"
+  ],
+  "ucinnejsim": [
+    "ucinnejsimu",
+    "ucinnejsim"
+  ],
+  "perlet": [
+    "perletovy",
+    "perlet"
+  ],
+  "cent": [
+    "centra",
+    "center"
+  ],
+  "krat": [
+    "kraje",
+    "kraji",
+    "kratce"
+  ],
+  "ziv": [
+    "zivotni",
+    "zivotu",
+    "zivot"
+  ],
+  "mainstream": [
+    "mainstreamu",
+    "mainstreamovem"
+  ],
+  "formen": [
+    "formentor",
+    "formentorem"
+  ],
+  "hled": [
+    "hledali",
+    "hledat",
+    "hledal"
+  ],
+  "titut": [
+    "titul",
+    "titulku"
+  ],
+  "neb": [
+    "nebylo",
+    "nebal"
+  ],
+  "patym": [
+    "patym",
+    "patymi"
+  ],
+  "jedn": [
+    "jednatel",
+    "jednalo",
+    "jednotkou"
+  ],
+  "barvt": [
+    "barvou",
+    "barvami"
+  ],
+  "ceskym": [
+    "ceskymi",
+    "ceskym"
+  ],
+  "vlnout": [
+    "vlne",
+    "vlnou"
+  ],
+  "predvad": [
+    "predvadi",
+    "predvadeji"
+  ],
+  "zasad": [
+    "zasadni",
+    "zasade"
+  ],
+  "port": [
+    "portu",
+    "porty"
+  ],
+  "zem": [
+    "zem",
+    "zemi"
+  ],
+  "nahrad": [
+    "nahrada",
+    "nahradi",
+    "nahradila"
+  ],
+  "posun": [
+    "posune",
+    "posunulo"
+  ],
+  "caloun": [
+    "calounene",
+    "calounena"
+  ],
+  "trizon": [
+    "trizonovou",
+    "trizonove"
+  ],
+  "zastavb": [
+    "zastavbe",
+    "zastavbove"
+  ],
+  "tyc": [
+    "tyce",
+    "tyci"
+  ],
+  "vyb": [
+    "vybere",
+    "vyber"
+  ],
+  "koncern": [
+    "koncern",
+    "koncernove"
+  ],
+  "bonusit": [
+    "bonusem",
+    "bonusu",
+    "bonusy"
+  ],
+  "hlav": [
+    "hlavove",
+    "hlavice"
+  ],
+  "zam": [
+    "zamykani",
+    "zamyka"
+  ],
+  "stav": [
+    "stavitelny",
+    "stavene"
+  ],
+  "modrit": [
+    "modry",
+    "modrou"
+  ],
+  "poskytovat": [
+    "poskytujici",
+    "poskytuje"
+  ],
+  "el": [
+    "elysee",
+    "elias"
+  ],
+  "potr": [
+    "potreby",
+    "potreba",
+    "potrva"
+  ],
+  "potrebovat": [
+    "potreboval",
+    "potrebujete",
+    "potrebuji"
+  ],
+  "povazovat": [
+    "povazuje",
+    "povazuji"
+  ],
+  "konkur": [
+    "konkurent",
+    "konkurentum"
+  ],
+  "vot": [
+    "volva",
+    "volvo",
+    "voli"
+  ],
+  "mensim": [
+    "mensim",
+    "mensimu"
+  ],
+  "pod": [
+    "podoba",
+    "podily"
+  ],
+  "em": [
+    "emoce",
+    "emilem"
+  ],
+  "spotreb": [
+    "spotrebice",
+    "spotrebe"
+  ],
+  "duvod": [
+    "duvodu",
+    "duvodem"
+  ],
+  "vybrat": [
+    "vybral",
+    "vyberu"
+  ],
+  "povrch": [
+    "povrch",
+    "povrchovou"
+  ],
+  "praktic": [
+    "prakticky",
+    "prakticnost"
+  ],
+  "zvuk": [
+    "zvuky",
+    "zvuk"
+  ],
+  "sit": [
+    "sit",
+    "situace",
+    "siti",
+    "sila"
+  ],
+  "akceler": [
+    "akceleratorem",
+    "akcelerace"
+  ],
+  "preplatit": [
+    "preplatite",
+    "preplatit"
+  ],
+  "slevt": [
+    "slevu",
+    "sleva"
+  ],
+  "priblizit": [
+    "priblizit",
+    "priblizil"
+  ],
+  "elektromobilit": [
+    "elektromobilitu",
+    "elektromobility"
+  ],
+  "predstavovat": [
+    "predstavuje",
+    "predstavuji"
+  ],
+  "dcer": [
+    "dcerina",
+    "dcerinou"
+  ],
+  "sluz": [
+    "sluzby",
+    "sluzeb"
+  ],
+  "del": [
+    "delka",
+    "delce",
+    "delena"
+  ],
+  "kategor": [
+    "kategorie",
+    "kategorii"
+  ],
+  "hromad": [
+    "hromady",
+    "hromada"
+  ],
+  "slav": [
+    "slavnem",
+    "slavnostni"
+  ],
+  "fanousit": [
+    "fanousky",
+    "fanousci"
+  ],
+  "hodn": [
+    "hodnotu",
+    "hodnoty"
+  ],
+  "pil": [
+    "pilota",
+    "pilotovi"
+  ],
+  "svem": [
+    "svem",
+    "svemu"
+  ],
+  "prof": [
+    "profilu",
+    "profiky"
+  ],
+  "dos": [
+    "doslova",
+    "doslo"
+  ],
+  "doplnovat": [
+    "doplnuji",
+    "doplnuje"
+  ],
+  "med": [
+    "medenou",
+    "medium"
+  ],
+  "naraznout": [
+    "narazniku",
+    "narazniky",
+    "naraznikem"
+  ],
+  "prihrad": [
+    "prihradkou",
+    "prihradek"
+  ],
+  "stupn": [
+    "stupnovou",
+    "stupne",
+    "stupnove"
+  ],
+  "rozsirovat": [
+    "rozsiruji",
+    "rozsiruje"
+  ],
+  "petil": [
+    "petilete",
+    "petiletem"
+  ],
+  "modernizov": [
+    "modernizovanou",
+    "modernizovala",
+    "modernizovane"
+  ],
+  "lnout": [
+    "latku",
+    "latky"
+  ],
+  "vys": [
+    "vyska",
+    "vysla",
+    "vysoka"
+  ],
+  "upravt": [
+    "upravami",
+    "upravou"
+  ],
+  "min": [
+    "minuly",
+    "minule"
+  ],
+  "karbonovym": [
+    "karbonovym",
+    "karbonovymi"
+  ],
+  "okruh": [
+    "okruhove",
+    "okruhu"
+  ],
+  "real": [
+    "realita",
+    "realitou"
+  ],
+  "graf": [
+    "graf",
+    "grafika",
+    "grafiky"
+  ],
+  "inform": [
+    "informace",
+    "informovat"
+  ],
+  "prum": [
+    "prumerem",
+    "prumer"
+  ],
+  "nabiz": [
+    "nabizena",
+    "nabizeji"
+  ],
+  "poct": [
+    "pocty",
+    "poctu"
+  ],
+  "nout": [
+    "nemeni",
+    "nulovy"
+  ],
+  "prepracov": [
+    "prepracovanem",
+    "prepracovanou"
+  ],
+  "popular": [
+    "popularita",
+    "popularni"
+  ],
+  "nalad": [
+    "naladeni",
+    "naladeny"
+  ],
+  "vid": [
+    "vidali",
+    "videni"
+  ],
+  "zvysit": [
+    "zvysi",
+    "zvyseni"
+  ],
+  "kusit": [
+    "kusy",
+    "kusech"
+  ],
+  "nav": [
+    "navyseni",
+    "navyseny"
+  ],
+  "vysled": [
+    "vysledku",
+    "vysledky"
+  ],
+  "hned": [
+    "hned",
+    "hnede"
+  ],
+  "zajim": [
+    "zajima",
+    "zajimalo",
+    "zajimal"
+  ],
+  "ukaz": [
+    "ukazalo",
+    "ukazatel"
+  ],
+  "tvor": [
+    "tvori",
+    "tvorena"
+  ],
+  "zel": [
+    "zelena",
+    "zelenou",
+    "zelinka"
+  ],
+  "privit": [
+    "privitala",
+    "privitali"
+  ],
+  "klient": [
+    "klientu",
+    "klientelu"
+  ],
+  "probeh": [
+    "probehla",
+    "probehlo"
+  ],
+  "vyrazit": [
+    "vyrazny",
+    "vyrazili"
+  ],
+  "cest": [
+    "ceste",
+    "cestovni",
+    "cesta",
+    "cestu",
+    "cesty"
+  ],
+  "kokpit": [
+    "kokpit",
+    "kokpitu"
+  ],
+  "lav": [
+    "lavici",
+    "lavice"
+  ],
+  "lev": [
+    "leve",
+    "levnou"
+  ],
+  "nasad": [
+    "nasadila",
+    "nasadi"
+  ],
+  "norm": [
+    "normal",
+    "normalu"
+  ],
+  "mikrovlak": [
+    "mikrovlakna",
+    "mikrovlaknem"
+  ],
+  "dvacit": [
+    "dvacitky",
+    "dvacitku"
+  ],
+  "uprnout": [
+    "uprav",
+    "uprave"
+  ],
+  "audiosystem": [
+    "audiosystemem",
+    "audiosystemu"
+  ],
+  "tlum": [
+    "tlumice",
+    "tlumici"
+  ],
+  "titan": [
+    "titanove",
+    "titanium"
+  ],
+  "odhal": [
+    "odhalene",
+    "odhaleni"
+  ],
+  "chyst": [
+    "chystane",
+    "chysta",
+    "chystana"
+  ],
+  "pracovat": [
+    "pracujici",
+    "pracuje"
+  ],
+  "prodejc": [
+    "prodejcu",
+    "prodejcum"
+  ],
+  "zavodt": [
+    "zavodaku",
+    "zavodak"
+  ],
+  "hot": [
+    "hotelu",
+    "hot"
+  ],
+  "plaket": [
+    "plaketky",
+    "plaketou"
+  ],
+  "ot": [
+    "otaceni",
+    "otce"
+  ],
+  "lad": [
+    "ladena",
+    "ladeni"
+  ],
+  "vysoc": [
+    "vysocan",
+    "vysocanech"
+  ],
+  "bud": [
+    "budouci",
+    "budovy",
+    "budovani"
+  ],
+  "pln": [
+    "plno",
+    "plny"
+  ],
+  "typ": [
+    "typu",
+    "typy"
+  ],
+  "taz": [
+    "taznou",
+    "tazna"
+  ],
+  "zast": [
+    "zastane",
+    "zastavka"
+  ],
+  "ostrit": [
+    "ostrou",
+    "ostry"
+  ],
+  "identic": [
+    "identicky",
+    "identicka"
+  ],
+  "vyraz": [
+    "vyrazila",
+    "vyrazna"
+  ],
+  "turbodies": [
+    "turbodiesel",
+    "turbodiesely"
+  ],
+  "toyod": [
+    "toyoda",
+    "toyodu"
+  ],
+  "riv": [
+    "rival",
+    "rivala"
+  ]
+}

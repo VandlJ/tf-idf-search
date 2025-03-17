@@ -1,0 +1,34 @@
+{
+    "input": {
+        "file": "data/autorevue.json",
+        "encoding": "utf-8"
+    },
+    "output": {
+        "directory": "results",
+        "original_vocab": "vocab_original.txt",
+        "preprocessed_vocab": "vocab_preprocessed.txt",
+        "stemmed_vocab": "vocab_stemmed.txt"
+    },
+    "preprocessing": {
+        "lowercase": true,
+        "remove_diacritics": true,
+        "stop_words": {
+            "use": true,
+            "language": "czech"
+        },
+        "nonsense_tokens": {
+            "remove": true,
+            "min_word_length": 2
+        }
+    },
+    "stemming": {
+        "use": true,
+        "language": "cz",
+        "stemmer_path": "./stemmer"
+    },
+    "lemmatization": {
+        "use": false,
+        "language": "cz",
+        "model_path": null
+    }
+}

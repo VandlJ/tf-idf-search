@@ -1,0 +1,522 @@
+# utf-8
+#sufixy substantiv a adjektiv (viz Příruční mluvnice češtiny, isbn: 80-7106-134-4)
+################################################################################
+# 1. Tvoření substantiv odvozováním
+################################################################################
+#    1.1 substantiva ze substantiv
+#        1.1.1 jména konatelská
+ař
+ář
+ionář
+kář
+íř
+ýř
+éř
+néř
+ník
+ík
+ovník
+ista
+ák
+ec
+ik
+log
+nom
+graf
+iér
+ér
+er
+atér
+or
+átor
+#        1.1.2 jména podle příslušnosti
+#                 příslušnost k zemi
+an
+čan
+ec
+ák
+#                 příslušnost k místu
+an
+ák
+#                 příslušnost ke skupině lidí
+ovec
+ník
+ovník
+ík
+ař
+ář
+ionář
+ák
+ista
+ita
+án
+ián
+#        1.1.3 názvy míst
+iště
+oviště
+ovisko
+isko
+na
+árna
+írna
+telna
+ice
+nice
+obinec
+inec
+ín
+ina
+ník
+dlo
+enka
+ář
+áč
+toř
+erie
+ium
+#        1.1.4 jména přechýlená
+#                 ženské protějšky mužských jmen
+ka
+nice
+ice
+yně
+kyně
+ovna
+na
+ová
+#                 přechylování jmen zvířat
+ice
+#                 mužské protějšky feminim
+ák
+#                 přechylování k neutrům !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+#e
+#ě
+#        1.1.5 názvy hromadné (kolektiva)
+stvo
+tvo
+ovstvo
+#!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! í
+oví
+# prefix sou- s koncovkou -í  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+#        1.1.6 názvy jednotlivin
+ina
+inka
+ín
+#        1.1.7 deminutiva (jména zdrobnělá)
+ek
+ík
+ka
+ko
+átko
+eček
+íček
+íčka
+ečka
+íčko
+ečko
+éčko
+ánek
+ínek
+áček
+enka
+inka
+oušek
+uška
+#        1.1.8 augmentiva (jména zveličelá)
+isko
+ák
+izna
+ajzna
+as
+oun
+our
+nda
+#        1.1.9 modifikace dalšími přídatnými rysy
+#        1.1.10 modifikace hodnotícími rysy
+#        1.1.11 popření konstituujících rysů pojmenování
+#        1.1.12 názvy specifikační
+ec
+ice
+iště
+oň
+enka
+ka
+ěnka
+ovné
+né
+#    1.2 substantiva z adjektiv
+#        1.2.1 maskulina
+ec
+inec
+ík
+ník
+ovník
+ák
+áč
+ek
+ásek
+#a  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+án
+ián
+oun
+as
+ouš
+och
+ýš
+an
+ál
+ismus
+#        1.2.2 femina
+ka
+ice
+nice
+ina
+ovina
+ucha
+ule
+uška
+ála
+#        1.2.3 neutra
+#e !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+#ě !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+če
+átko
+ství
+ctví
+#        1.2.4 substantivizace adjektiv
+#        1.2.5 názvy vlastností
+ost
+nost
+est
+ství
+ctví
+stvo
+ina
+ovina
+ština
+ota
+oba
+ka
+#o !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+čno
+no
+#í !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ita
+ika
+ie
+ance
+ence
+ura
+ismus
+#    1.3 substantiva ze sloves
+#        1.3.1 jména činitelská
+tel
+ovatel
+itel
+ce
+#č!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ec
+tec
+ník
+čí
+ák
+ař
+ář
+#l !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ala
+#a !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+oun
+loun
+dlo
+na
+an
+ka
+out
+or
+átor
+tor
+ista
+er
+ér
+ant
+ent
+#        1.3.2 názvy prostředků činností
+#č !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+áč
+čka
+dlo
+ka
+tko
+ák
+ník
+ivo
+ík
+lo
+nice
+or
+ivum
+ikum
+er
+ér
+#        1.3.3 názvy výsledků děje
+ek
+ka
+ina
+tina
+ec
+át
+ura
+#        1.3.4 názvy dějů
+ení
+etí
+ění
+ětí
+ní
+tí
+aní
+ání
+ot
+ka
+vka
+čka
+tka
+#a !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ba
+tba
+itba
+ná
+enice
+nice
+tva
+#t !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+#ť !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+#v !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ace
+ice
+nce
+ce
+se
+ze
+xe
+ura
+tura
+áž
+ing
+ink
+ment
+unk
+uňk
+#    1.4 substantiva z adverbií a z předložkových pádů
+ek
+ník
+nka
+ka
+nice
+#í !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+#    1.5 substantiva z číslovek
+ina
+ice
+ák
+án
+iny
+ník
+če
+#    1.6 tvoření substantiv skládáním
+#        1.6.1. kompozita slučovací
+#        1.6.1. jména podle příslušnosti
+an
+ec
+#        1.6.1. jména konatelská
+#        1.6.1. jména činitelská
+ce
+#č !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ka
+#        1.6.1. názvy prostředků činnosti
+měr
+vod
+met
+#        1.6.1. názvy míst
+na
+#        1.6.1. názvy dějů
+#a !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ní
+tí
+ba
+#        1.6.1. názvy nositelů vlastností
+sloví
+#        1.6.1. kompozita číselná
+řad
+řadí
+téka
+################################################################################
+# 2. Tvoření adjektiv odvozováním
+################################################################################
+#    2.1 adjektiva ze substantiv
+#        2.1.1 adjektiva posesivní
+ův
+ova
+ovo
+ovský
+ovic
+in
+ina
+ino
+#í !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+cí
+čí
+ský
+ký
+ovský
+#        2.1.2 vztah k místu
+ní
+ský
+ijský
+#        2.1.3 adjektiva původu z látky
+ěný
+ený
+ný
+ový
+#        2.1.4 nespecifikovaná relační adjektiva
+ový
+ní
+ovní
+ný
+#        2.1.5 adjektiva kvalitativní
+atý
+natý
+itý
+ovitý
+ovaný
+ný
+ivý
+ný
+natý
+itý
+ičitý
+ečný
+ičný
+ový
+istý
+ičelý
+livý
+čivý
+ovský
+#    2.2 adjektiva ze sloves
+#        2.2.1 procesuálnost
+#í !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+#        2.2.2 rezultativnost pasivní
+#ý !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+#á !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+#é !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+#        2.2.3 rezultativnost aktivní
+#í !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+lý
+ilý
+#        2.2.4 neaktuální vykonávání
+avý
+lavý
+kavý
+vý
+ivý
+livý
+čivý
+ný
+čný
+cný
+atý
+utý
+utný
+#kombinace: prefix u-, roz- a sufix -ný, -tý  (upovídaný, rozesmátý) !!!!!!!!!!!
+#        2.2.5 potenciální zasažení
+telný
+itelný
+tný
+#        2.2.6 účelovost
+cí
+ací
+icí
+ální
+ární
+bilní
+tní
+ntní
+ivní
+#    2.3 adjektiva z adjektiv
+#        2.3.1 komparativ
+ejší
+ější
+čí
+ší
+# nepravidelné: delší, menší, větší, lepší, horší (zlý) !!!!!!!!!!!!!!!!!!!!!!!!
+#        2.3.2 superlativ
+#        2.3.3 zvýšená míra vlastností
+ičký
+oučký
+inký
+ounký
+ičičký
+ilinký
+oulinký
+ouninký
+inkatý
+#        2.3.4 velká míra vlastností
+ánský
+#        2.3.5 nejvyšší míra vlastností
+#        2.3.6 připuštění nejvyšší míry vlastností
+#        2.3.7 menší míra vlastností
+avý
+#kombinace na-, při-, za- a -lý !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+#        2.3.8 menší, neúplná míra vlastností
+#    2.4 adjektiva z adverbií a z předložkových pádů
+#        2.4.1 adjektiva z adverbií
+ejší
+ější
+ní
+ný
+ský
+ový
+cí
+#        2.4.2 adjektiva z přeložkových pádů
+ní
+ovní
+ný
+ový
+ský
+# kombinace bez-, beze- a -ý, -ný
+cký
+ický
+
+
+################################################################################
+elnější
+hování
+enční
+nější
+ovat
+ovávat
+tivismus
+tivistický
+tivita
+tnější
+tový
+tum
+ující
+vaný
+vání
+čin
+ční
+oviny
+entův
+zování
+cionis
+cionismus
+entka
+izování
+izováný
+entní
+orium
+ování
+tiv
+cionist
+izace
+izovat
